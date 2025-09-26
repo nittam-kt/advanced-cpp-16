@@ -1,6 +1,4 @@
-﻿#include "Transform.h"
-
-#include "GameObject.h"
+﻿#include "pch.h"
 
 
 namespace UniDx

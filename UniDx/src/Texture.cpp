@@ -1,9 +1,9 @@
-﻿#include "Texture.h"
+﻿#include "pch.h"
+#include <UniDx/Texture.h>
 
 #include <filesystem>
 
-#include "D3DManager.h"
-#include "Debug.h"
+#include <UniDx/D3DManager.h>
 
 
 namespace UniDx

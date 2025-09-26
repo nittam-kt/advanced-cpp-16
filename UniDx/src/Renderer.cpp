@@ -1,13 +1,11 @@
-﻿#include "Renderer.h"
+﻿#include "pch.h"
+#include <UniDx/Renderer.h>
 
-#include "GameObject.h"
-#include "Transform.h"
-#include "D3DManager.h"
-#include "Texture.h"
-#include "Camera.h"
-#include "Material.h"
-#include "SceneManager.h"
-#include "Debug.h"
+#include <UniDx/D3DManager.h>
+#include <UniDx/Texture.h>
+#include <UniDx/Camera.h>
+#include <UniDx/Material.h>
+#include <UniDx/SceneManager.h>
 
 namespace UniDx{
 

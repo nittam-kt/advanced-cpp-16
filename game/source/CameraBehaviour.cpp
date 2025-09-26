@@ -2,9 +2,8 @@
 
 #include "CameraBehaviour.h"
 
-#include <Transform.h>
-#include <Input.h>
-#include <UniDxTime.h>
+#include <UniDx/Input.h>
+#include <UniDx/UniDxTime.h>
 
 #include "Player.h"
 

@@ -14,9 +14,9 @@ class Object
 public:
     virtual ~Object() {}
 
-    ReadOnlyProperty<wstring> name;
+    ReadOnlyProperty<wstring_view> name;
 
-    Object(ReadOnlyProperty<wstring>::Getter nameGet) : name(nameGet) {}
+    Object(ReadOnlyProperty<wstring_view>::Getter nameGet) : name(nameGet) {}
 };
 
 } // namespace UniDx

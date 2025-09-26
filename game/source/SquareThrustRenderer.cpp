@@ -1,8 +1,7 @@
-﻿#include "PrimitiveRenderer.h"
+﻿#include "SquareThrustRenderer.h"
 
-#include <Texture.h>
-#include <Camera.h>
-#include <Debug.h>
+#include <UniDx/Texture.h>
+#include <UniDx/Camera.h>
 
 #include "SquareThrustRenderer.h"
 

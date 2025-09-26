@@ -1,9 +1,10 @@
-﻿#include "Physics.h"
+﻿#include "pch.h"
+#include <UniDx/Physics.h>
 
 #include <algorithm>
 
-#include "Collider.h"
-#include "Rigidbody.h"
+#include <UniDx/Collider.h>
+#include <UniDx/Rigidbody.h>
 
 
 namespace UniDx

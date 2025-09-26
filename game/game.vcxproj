@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5a09b918-3419-4151-8952-e8a4a19a191d}</ProjectGuid>
-    <RootNamespace>week01</RootNamespace>
+    <ProjectGuid>{0716220B-F540-41B4-B379-8CA750755118}</ProjectGuid>
+    <RootNamespace>game</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>week13</ProjectName>
+    <ProjectName>game</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -106,14 +106,14 @@
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)tinygltf;$(SolutionDir)DirectXTK\include;$(SolutionDir)DirectXTex\include;$(SolutionDir)Unidx</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)UniDx\include;$(SolutionDir)tinygltf;$(SolutionDir)DirectXTK\include;$(SolutionDir)DirectXTex\include;$(SolutionDir)Unidx</AdditionalIncludeDirectories>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>
-      </AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(SolutionDir)DirectXTK\debug_lib\DirectXTK.lib;$(SolutionDir)DirectXTex\debug_lib\DirectXTex.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>UniDx.lib;$(CoreLibraryDependencies);%(AdditionalDependencies);$(SolutionDir)DirectXTK\debug_lib\DirectXTK.lib;$(SolutionDir)DirectXTex\debug_lib\DirectXTex.lib</AdditionalDependencies>
       <MapExports>true</MapExports>
     </Link>
   </ItemDefinitionGroup>
@@ -125,16 +125,18 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)tinygltf;$(SolutionDir)DirectXTK\include;$(SolutionDir)DirectXTex\include;$(SolutionDir)Unidx</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)UniDx\include;$(SolutionDir)tinygltf;$(SolutionDir)DirectXTK\include;$(SolutionDir)DirectXTex\include;$(SolutionDir)Unidx</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)$(SolutionDir)DirectXTK\release_lib\DirectXTK.lib;$(SolutionDir)DirectXTex\release_lib\DirectXTex.lib</AdditionalDependencies>
+      <AdditionalDependencies>UniDx.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)$(SolutionDir)DirectXTK\release_lib\DirectXTK.lib;$(SolutionDir)DirectXTex\release_lib\DirectXTex.lib</AdditionalDependencies>
       <MapExports>true</MapExports>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -170,40 +172,6 @@
     <ClInclude Include="..\tinygltf\stb_image.h" />
     <ClInclude Include="..\tinygltf\stb_image_write.h" />
     <ClInclude Include="..\tinygltf\tiny_gltf.h" />
-    <ClInclude Include="..\UniDx\Behaviour.h" />
-    <ClInclude Include="..\UniDx\Bounds.h" />
-    <ClInclude Include="..\UniDx\Camera.h" />
-    <ClInclude Include="..\UniDx\Collider.h" />
-    <ClInclude Include="..\UniDx\Collision.h" />
-    <ClInclude Include="..\UniDx\Component.h" />
-    <ClInclude Include="..\UniDx\D3DManager.h" />
-    <ClInclude Include="..\UniDx\Debug.h" />
-    <ClInclude Include="..\UniDX\Engine.h" />
-    <ClInclude Include="..\UniDx\GameObject.h" />
-    <ClInclude Include="..\UniDx\GameObject_impl.h" />
-    <ClInclude Include="..\UniDx\GltfModel.h" />
-    <ClInclude Include="..\UniDx\Input.h" />
-    <ClInclude Include="..\UniDx\Light.h" />
-    <ClInclude Include="..\UniDx\LightManager.h" />
-    <ClInclude Include="..\UniDx\Material.h" />
-    <ClInclude Include="..\UniDx\Mesh.h" />
-    <ClInclude Include="..\UniDx\Object.h" />
-    <ClInclude Include="..\UniDx\Physics.h" />
-    <ClInclude Include="..\UniDx\PrimitiveRenderer.h" />
-    <ClInclude Include="..\UniDx\Property.h" />
-    <ClInclude Include="..\UniDx\Random.h" />
-    <ClInclude Include="..\UniDx\Renderer.h" />
-    <ClInclude Include="..\UniDx\Rigidbody.h" />
-    <ClInclude Include="..\UniDx\Scene.h" />
-    <ClInclude Include="..\UniDx\SceneManager.h" />
-    <ClInclude Include="..\UniDx\Shader.h" />
-    <ClInclude Include="..\UniDx\Sphere.h" />
-    <ClInclude Include="..\UniDx\Texture.h" />
-    <ClInclude Include="..\UniDx\Transform.h" />
-    <ClInclude Include="..\UniDx\UniDxDefine.h" />
-    <ClInclude Include="..\UniDx\UniDxTime.h" />
-    <ClInclude Include="..\UniDX\UniDx.h" />
-    <ClInclude Include="..\UniDX\Singleton.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="source\CameraBehaviour.h" />
@@ -214,26 +182,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\tinygltf\tiny_gltf.cc" />
-    <ClCompile Include="..\UniDx\Camera.cpp" />
-    <ClCompile Include="..\UniDx\Collider.cpp" />
-    <ClCompile Include="..\UniDx\Component.cpp" />
-    <ClCompile Include="..\UniDx\D3DManager.cpp" />
-    <ClCompile Include="..\UniDX\Engine.cpp" />
-    <ClCompile Include="..\UniDx\GameObject.cpp" />
-    <ClCompile Include="..\UniDx\GltfModel.cpp" />
-    <ClCompile Include="..\UniDx\Input.cpp" />
-    <ClCompile Include="..\UniDx\Light.cpp" />
-    <ClCompile Include="..\UniDx\LightManager.cpp" />
-    <ClCompile Include="..\UniDx\Material.cpp" />
-    <ClCompile Include="..\UniDx\Mesh.cpp" />
-    <ClCompile Include="..\UniDx\Physics.cpp" />
-    <ClCompile Include="..\UniDx\PrimitiveRenderer.cpp" />
-    <ClCompile Include="..\UniDx\Renderer.cpp" />
-    <ClCompile Include="..\UniDx\SceneManager.cpp" />
-    <ClCompile Include="..\UniDx\Shader.cpp" />
-    <ClCompile Include="..\UniDx\Texture.cpp" />
-    <ClCompile Include="..\UniDx\Transform.cpp" />
-    <ClCompile Include="..\UniDx\UniDx.cpp" />
     <ClCompile Include="source\CameraBehaviour.cpp" />
     <ClCompile Include="source\CreateDefaultScene.cpp" />
     <ClCompile Include="source\main.cpp" />
@@ -241,7 +189,7 @@
     <ClCompile Include="source\SquareThrustRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="week01.rc" />
+    <ResourceCompile Include="game.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resource\Albedo.png" />
@@ -255,17 +203,9 @@
     <Image Include="Resource\wood-1.png" />
     <Image Include="Resource\wood-2.png" />
     <Image Include="small.ico" />
-    <Image Include="week01.ico" />
+    <Image Include="game.ico" />
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="..\UniDx\DefaultShade.hlsl">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </FxCompile>
-    <FxCompile Include="..\UniDx\SpriteShader.hlsl">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </FxCompile>
     <FxCompile Include="Resource\Albedo.hlsl">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>

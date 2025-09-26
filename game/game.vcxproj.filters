@@ -37,9 +37,6 @@
     <Filter Include="DirextXTK\release_lib">
       <UniqueIdentifier>{73c0d651-01cb-4bd0-940c-19438e5793b9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="UniDx">
-      <UniqueIdentifier>{b6663ce5-6df3-404c-b2e9-6b3a021941af}</UniqueIdentifier>
-    </Filter>
     <Filter Include="tinygltf">
       <UniqueIdentifier>{a572b3d8-8e7a-459e-810d-3ad05acbc28b}</UniqueIdentifier>
     </Filter>
@@ -138,74 +135,8 @@
     <ClInclude Include="..\DirectXTex\include\scoped.h">
       <Filter>DirectXTex\include</Filter>
     </ClInclude>
-    <ClInclude Include="..\UniDX\UniDx.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDX\Singleton.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDX\Engine.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Shader.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\D3DManager.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Debug.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\UniDxTime.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Object.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Component.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Property.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Transform.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\SceneManager.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Scene.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\UniDxDefine.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
     <ClInclude Include="source\main.h">
       <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Behaviour.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Camera.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Renderer.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Texture.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Input.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\GameObject.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Mesh.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\PrimitiveRenderer.h">
-      <Filter>UniDx</Filter>
     </ClInclude>
     <ClInclude Include="..\tinygltf\json.hpp">
       <Filter>tinygltf</Filter>
@@ -219,41 +150,8 @@
     <ClInclude Include="..\tinygltf\tiny_gltf.h">
       <Filter>tinygltf</Filter>
     </ClInclude>
-    <ClInclude Include="..\UniDx\Material.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
     <ClInclude Include="source\SquareThrustRenderer.h">
       <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Rigidbody.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Physics.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Bounds.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Collider.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Random.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Sphere.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\GameObject_impl.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Light.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\LightManager.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
-    <ClInclude Include="..\UniDx\Collision.h">
-      <Filter>UniDx</Filter>
     </ClInclude>
     <ClInclude Include="source\CameraBehaviour.h">
       <Filter>ヘッダー ファイル</Filter>
@@ -261,76 +159,19 @@
     <ClInclude Include="source\Player.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="..\UniDx\GltfModel.h">
-      <Filter>UniDx</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\UniDx\Shader.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\D3DManager.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Component.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Transform.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
     <ClCompile Include="source\main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="source\CreateDefaultScene.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\UniDx\Camera.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Renderer.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Texture.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDX\Engine.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Input.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Mesh.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\PrimitiveRenderer.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
     <ClCompile Include="..\tinygltf\tiny_gltf.cc">
       <Filter>tinygltf</Filter>
     </ClCompile>
-    <ClCompile Include="..\UniDx\UniDx.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Material.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
     <ClCompile Include="source\SquareThrustRenderer.cpp">
       <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Physics.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Collider.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\LightManager.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\Light.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\GameObject.cpp">
-      <Filter>UniDx</Filter>
     </ClCompile>
     <ClCompile Include="source\CameraBehaviour.cpp">
       <Filter>ソース ファイル</Filter>
@@ -338,23 +179,14 @@
     <ClCompile Include="source\Player.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\UniDx\GltfModel.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
-    <ClCompile Include="..\UniDx\SceneManager.cpp">
-      <Filter>UniDx</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="week01.rc">
+    <ResourceCompile Include="game.rc">
       <Filter>リソース ファイル</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="small.ico">
-      <Filter>リソース ファイル</Filter>
-    </Image>
-    <Image Include="week01.ico">
       <Filter>リソース ファイル</Filter>
     </Image>
     <Image Include="Resource\floor.png">
@@ -387,11 +219,11 @@
     <Image Include="Resource\space_frigate.png">
       <Filter>リソース ファイル</Filter>
     </Image>
+    <Image Include="game.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="..\UniDx\SpriteShader.hlsl">
-      <Filter>UniDx</Filter>
-    </FxCompile>
     <FxCompile Include="Resource\Albedo.hlsl">
       <Filter>リソース ファイル</Filter>
     </FxCompile>
@@ -400,9 +232,6 @@
     </FxCompile>
     <FxCompile Include="Resource\SimpleShade.hlsl">
       <Filter>リソース ファイル</Filter>
-    </FxCompile>
-    <FxCompile Include="..\UniDx\DefaultShade.hlsl">
-      <Filter>UniDx</Filter>
     </FxCompile>
   </ItemGroup>
   <ItemGroup>

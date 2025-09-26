@@ -1,4 +1,5 @@
-﻿#include "Input.h"
+﻿#include "pch.h"
+#include <UniDx/Input.h>
 
 namespace UniDx{
 

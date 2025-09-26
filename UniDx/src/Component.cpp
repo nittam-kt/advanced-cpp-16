@@ -1,12 +1,11 @@
-﻿#include "Component.h"
-#include "GameObject.h"
-#include "Transform.h"
+﻿#include "pch.h"
+#include <UniDx/Component.h>
 
 namespace UniDx{
 
 // コンストラクタ
 Component::Component() :
-    Object([this]() {return gameObject->name;}),
+    Object([this]() { return gameObject != nullptr ? gameObject->name : wstring_view(L""); }),
     enabled(
         // get
         [this]() { return _enabled && isCalledAwake; },

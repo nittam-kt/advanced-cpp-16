@@ -2,12 +2,9 @@
 
 #include "Player.h"
 
-#include <Input.h>
-
-#include <Transform.h>
-#include <Collider.h>
-#include <UniDxTime.h>
-#include <Debug.h>
+#include <UniDx/Input.h>
+#include <UniDx/Collider.h>
+#include <UniDx/UniDxTime.h>
 
 using namespace DirectX;
 using namespace UniDx;

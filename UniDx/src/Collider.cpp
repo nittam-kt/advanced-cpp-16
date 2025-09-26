@@ -2,10 +2,9 @@
 
 #include <limits>
 
-#include "GameObject.h"
-#include "Transform.h"
-#include "Rigidbody.h"
-#include "Debug.h"
+#include "pch.h"
+#include <UniDx/Rigidbody.h>
+#include <UniDx/Collider.h>
 
 namespace
 {

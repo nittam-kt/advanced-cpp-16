@@ -225,7 +225,7 @@ public:
     }
 
 protected:
-    std::wstring name_;
+    wstring name_;
 };
 
 

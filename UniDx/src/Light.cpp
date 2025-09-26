@@ -1,7 +1,7 @@
-﻿#include "Light.h"
+﻿#include "pch.h"
+#include <UniDx/Light.h>
 
-#include "LightManager.h"
-#include "Debug.h"
+#include <UniDx/LightManager.h>
 
 
 namespace UniDx{

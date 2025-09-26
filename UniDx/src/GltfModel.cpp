@@ -1,9 +1,8 @@
-﻿#include "GltfModel.h"
+﻿#include "pch.h"
+#include <UniDx/GltfModel.h>
 
 #include <tiny_gltf.h>
 #include <codecvt>
-
-#include "UniDx.h"
 
 
 namespace UniDx{

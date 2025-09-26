@@ -1,10 +1,8 @@
-﻿#include "Material.h"
+﻿#include "pch.h"
+#include <UniDx/Material.h>
 
-#include "GameObject.h"
-#include "Transform.h"
-#include "D3DManager.h"
-#include "Texture.h"
-#include "Debug.h"
+#include <UniDx/D3DManager.h>
+#include <UniDx/Texture.h>
 
 namespace UniDx{
 

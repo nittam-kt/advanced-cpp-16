@@ -1,4 +1,5 @@
-﻿#include "D3DManager.h"
+﻿#include "pch.h"
+#include <UniDx/D3DManager.h>
 
 #include <windows.h>
 

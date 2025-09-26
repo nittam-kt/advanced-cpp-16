@@ -1,8 +1,8 @@
-﻿#include "PrimitiveRenderer.h"
+﻿#include "pch.h"
+#include <UniDx/PrimitiveRenderer.h>
 
-#include "Texture.h"
-#include "Camera.h"
-#include "Debug.h"
+#include <UniDx/Texture.h>
+#include <UniDx/Camera.h>
 
 // キューブの1面あたり4頂点、3面で12頂点、2セットで24頂点
 namespace {

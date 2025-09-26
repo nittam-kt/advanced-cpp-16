@@ -35,7 +35,7 @@ public:
 
 protected:
     ComPtr<ID3D11SamplerState> samplerState;
-    std::wstring fileName;
+    wstring fileName;
 
     // シェーダーリソースビュー(画像データ読み取りハンドル)
     ComPtr<ID3D11ShaderResourceView> m_srv = nullptr;

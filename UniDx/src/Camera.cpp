@@ -1,8 +1,5 @@
-﻿#include "Camera.h"
-
-#include "GameObject.h"
-#include "Transform.h"
-#include "Debug.h"
+﻿#include "pch.h"
+#include <UniDx/Camera.h>
 
 namespace UniDx{
 

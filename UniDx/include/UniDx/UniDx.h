@@ -6,6 +6,7 @@
 #include "GameObject.h"
 #include "Transform.h"
 #include "GameObject_impl.h"
+#include "Behaviour.h"
 
 
 namespace UniDx

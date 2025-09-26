@@ -1,11 +1,11 @@
-﻿#include "Shader.h"
+﻿#include "pch.h"
+#include <UniDx/Shader.h>
 
 #include <filesystem>
 #include <d3d11.h>
 #include <SimpleMath.h>
 
-#include "D3DManager.h"
-#include "Debug.h"
+#include <UniDx/D3DManager.h>
 
 #pragma comment(lib, "d3dcompiler.lib")
 

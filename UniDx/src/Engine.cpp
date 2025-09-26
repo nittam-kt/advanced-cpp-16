@@ -1,7 +1,5 @@
-﻿// week01.cpp : アプリケーションのエントリ ポイントを定義します。
-//
-
-#include "Engine.h"
+﻿#include "pch.h"
+#include <UniDx/Engine.h>
 
 #include <string>
 #include <chrono>
@@ -17,19 +15,16 @@ using namespace DirectX::SimpleMath;
 // DirextXフォントライブラリを使用できるようにする
 #include <SpriteFont.h>
 
-#include "D3DManager.h"
-#include "UniDxTime.h"
-#include "SceneManager.h"
-#include "Scene.h"
-#include "GameObject.h"
-#include "Behaviour.h"
-#include "Camera.h"
-#include "Renderer.h"
-#include "Transform.h"
-#include "Physics.h"
-#include "LightManager.h"
-#include "Input.h"
-#include "Debug.h"
+#include <UniDx/D3DManager.h>
+#include <UniDx/UniDxTime.h>
+#include <UniDx/SceneManager.h>
+#include <UniDx/Scene.h>
+#include <UniDx/Behaviour.h>
+#include <UniDx/Camera.h>
+#include <UniDx/Renderer.h>
+#include <UniDx/Physics.h>
+#include <UniDx/LightManager.h>
+#include <UniDx/Input.h>
 
 // フォント描画用
 std::unique_ptr<SpriteBatch> g_spriteBatch;

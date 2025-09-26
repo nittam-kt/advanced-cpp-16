@@ -2,12 +2,12 @@
 #include <SimpleMath.h>
 
 #include "Component.h"
-#include "Collision.h"
 #include "Transform.h"
 
 namespace UniDx {
 
 class Collider;
+struct Collision;
 
 // --------------------
 // Behaviour基底クラス

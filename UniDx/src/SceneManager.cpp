@@ -1,10 +1,9 @@
-﻿#include "SceneManager.h"
+﻿#include "pch.h"
+#include <UniDx/SceneManager.h>
 
 #include <memory>
 
-#include "Material.h"
-#include "GameObject.h"
-#include "Transform.h"
+#include <UniDx/Material.h>
 
 
 namespace UniDx{

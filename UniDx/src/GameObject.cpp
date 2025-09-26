@@ -1,7 +1,6 @@
-﻿#include "GameObject.h"
+﻿#include "pch.h"
 
-#include "Behaviour.h"
-#include "Transform.h"
+#include <UniDx/Behaviour.h>
 
 
 namespace UniDx{

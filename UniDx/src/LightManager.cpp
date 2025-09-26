@@ -1,8 +1,8 @@
-﻿#include "LightManager.h"
+﻿#include "pch.h"
+#include <UniDx/LightManager.h>
 
-#include "Light.h"
-#include "Transform.h"
-#include "D3DManager.h"
+#include <UniDx/Light.h>
+#include <UniDx/D3DManager.h>
 
 
 namespace UniDx

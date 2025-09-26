@@ -1,7 +1,7 @@
-﻿#include "Mesh.h"
+﻿#include "pch.h"
+#include <UniDx/Mesh.h>
 
-#include "D3DManager.h"
-#include "Debug.h"
+#include <UniDx/D3DManager.h>
 
 namespace UniDx{
 

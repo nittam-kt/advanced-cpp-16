@@ -1,7 +1,7 @@
 #pragma once
 
 #include <UniDx.h>
-#include <Behaviour.h>
+#include <UniDx/Behaviour.h>
 
 
 class Player;

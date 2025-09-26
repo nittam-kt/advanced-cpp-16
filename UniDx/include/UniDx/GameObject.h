@@ -28,7 +28,7 @@ public:
 
     const std::vector<std::unique_ptr<Component>>& GetComponents() { return components; }
 
-    GameObject(const wstring& name = L"GameObject") : Object([this](){return name_.c_str();}), name_(name)
+    GameObject(const wstring& name = L"GameObject") : Object([this](){return name_;}), name_(name)
     {
         // デフォルトでTransformを追加
         transform = AddComponent<Transform>();

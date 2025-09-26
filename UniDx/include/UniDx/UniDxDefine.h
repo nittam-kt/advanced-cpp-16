@@ -12,6 +12,7 @@ namespace UniDx
 {
 
 using std::wstring;
+using std::wstring_view;
 using std::unique_ptr;
 using std::shared_ptr;
 using Microsoft::WRL::ComPtr;

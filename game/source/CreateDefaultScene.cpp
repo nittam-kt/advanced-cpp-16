@@ -4,15 +4,14 @@
 #include <numbers>
 
 #include <UniDx.h>
-#include <Scene.h>
-#include <Component.h>
-#include <Camera.h>
-#include <PrimitiveRenderer.h>
-#include <GltfModel.h>
-#include <Rigidbody.h>
-#include <Random.h>
-#include <Collider.h>
-#include <Light.h>
+#include <UniDx/Scene.h>
+#include <UniDx/Camera.h>
+#include <UniDx/PrimitiveRenderer.h>
+#include <UniDx/GltfModel.h>
+#include <UniDx/Rigidbody.h>
+#include <UniDx/Random.h>
+#include <UniDx/Collider.h>
+#include <UniDx/Light.h>
 
 #include "CameraBehaviour.h"
 #include "Player.h"

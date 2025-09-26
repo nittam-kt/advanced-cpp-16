@@ -1,8 +1,7 @@
 #pragma once
 
 #include <UniDx.h>
-#include <Behaviour.h>
-#include <Rigidbody.h>
+#include <UniDx/Rigidbody.h>
 
 using namespace UniDx;
 

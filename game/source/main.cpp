@@ -5,7 +5,7 @@
 #include "main.h"
 
 #include <UniDx.h>
-#include <Engine.h>
+#include <UniDx/Engine.h>
 
 #define MAX_LOADSTRING 100
 
