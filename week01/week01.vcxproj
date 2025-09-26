@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5a09b918-3419-4151-8952-e8a4a19a191d}</ProjectGuid>
+    <RootNamespace>week01</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>week13</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)tinygltf;$(SolutionDir)DirectXTK\include;$(SolutionDir)DirectXTex\include;$(SolutionDir)Unidx</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(SolutionDir)DirectXTK\debug_lib\DirectXTK.lib;$(SolutionDir)DirectXTex\debug_lib\DirectXTex.lib</AdditionalDependencies>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)tinygltf;$(SolutionDir)DirectXTK\include;$(SolutionDir)DirectXTex\include;$(SolutionDir)Unidx</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)$(SolutionDir)DirectXTK\release_lib\DirectXTK.lib;$(SolutionDir)DirectXTex\release_lib\DirectXTex.lib</AdditionalDependencies>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DirectXTex\include\BC.h" />
+    <ClInclude Include="..\DirectXTex\include\BCDirectCompute.h" />
+    <ClInclude Include="..\DirectXTex\include\DDS.h" />
+    <ClInclude Include="..\DirectXTex\include\DirectXTex.h" />
+    <ClInclude Include="..\DirectXTex\include\DirectXTexP.h" />
+    <ClInclude Include="..\DirectXTex\include\filters.h" />
+    <ClInclude Include="..\DirectXTex\include\scoped.h" />
+    <ClInclude Include="..\DirectXTK\include\Audio.h" />
+    <ClInclude Include="..\DirectXTK\include\BufferHelpers.h" />
+    <ClInclude Include="..\DirectXTK\include\CommonStates.h" />
+    <ClInclude Include="..\DirectXTK\include\DDSTextureLoader.h" />
+    <ClInclude Include="..\DirectXTK\include\DirectXHelpers.h" />
+    <ClInclude Include="..\DirectXTK\include\Effects.h" />
+    <ClInclude Include="..\DirectXTK\include\GamePad.h" />
+    <ClInclude Include="..\DirectXTK\include\GeometricPrimitive.h" />
+    <ClInclude Include="..\DirectXTK\include\GraphicsMemory.h" />
+    <ClInclude Include="..\DirectXTK\include\Keyboard.h" />
+    <ClInclude Include="..\DirectXTK\include\Model.h" />
+    <ClInclude Include="..\DirectXTK\include\Mouse.h" />
+    <ClInclude Include="..\DirectXTK\include\PostProcess.h" />
+    <ClInclude Include="..\DirectXTK\include\PrimitiveBatch.h" />
+    <ClInclude Include="..\DirectXTK\include\ScreenGrab.h" />
+    <ClInclude Include="..\DirectXTK\include\SimpleMath.h" />
+    <ClInclude Include="..\DirectXTK\include\SpriteBatch.h" />
+    <ClInclude Include="..\DirectXTK\include\SpriteFont.h" />
+    <ClInclude Include="..\DirectXTK\include\VertexTypes.h" />
+    <ClInclude Include="..\DirectXTK\include\WICTextureLoader.h" />
+    <ClInclude Include="..\DirectXTK\include\XboxDDSTextureLoader.h" />
+    <ClInclude Include="..\tinygltf\json.hpp" />
+    <ClInclude Include="..\tinygltf\stb_image.h" />
+    <ClInclude Include="..\tinygltf\stb_image_write.h" />
+    <ClInclude Include="..\tinygltf\tiny_gltf.h" />
+    <ClInclude Include="..\UniDx\Behaviour.h" />
+    <ClInclude Include="..\UniDx\Bounds.h" />
+    <ClInclude Include="..\UniDx\Camera.h" />
+    <ClInclude Include="..\UniDx\Collider.h" />
+    <ClInclude Include="..\UniDx\Collision.h" />
+    <ClInclude Include="..\UniDx\Component.h" />
+    <ClInclude Include="..\UniDx\D3DManager.h" />
+    <ClInclude Include="..\UniDx\Debug.h" />
+    <ClInclude Include="..\UniDX\Engine.h" />
+    <ClInclude Include="..\UniDx\GameObject.h" />
+    <ClInclude Include="..\UniDx\GameObject_impl.h" />
+    <ClInclude Include="..\UniDx\GltfModel.h" />
+    <ClInclude Include="..\UniDx\Input.h" />
+    <ClInclude Include="..\UniDx\Light.h" />
+    <ClInclude Include="..\UniDx\LightManager.h" />
+    <ClInclude Include="..\UniDx\Material.h" />
+    <ClInclude Include="..\UniDx\Mesh.h" />
+    <ClInclude Include="..\UniDx\Object.h" />
+    <ClInclude Include="..\UniDx\Physics.h" />
+    <ClInclude Include="..\UniDx\PrimitiveRenderer.h" />
+    <ClInclude Include="..\UniDx\Property.h" />
+    <ClInclude Include="..\UniDx\Random.h" />
+    <ClInclude Include="..\UniDx\Renderer.h" />
+    <ClInclude Include="..\UniDx\Rigidbody.h" />
+    <ClInclude Include="..\UniDx\Scene.h" />
+    <ClInclude Include="..\UniDx\SceneManager.h" />
+    <ClInclude Include="..\UniDx\Shader.h" />
+    <ClInclude Include="..\UniDx\Sphere.h" />
+    <ClInclude Include="..\UniDx\Texture.h" />
+    <ClInclude Include="..\UniDx\Transform.h" />
+    <ClInclude Include="..\UniDx\UniDxDefine.h" />
+    <ClInclude Include="..\UniDx\UniDxTime.h" />
+    <ClInclude Include="..\UniDX\UniDx.h" />
+    <ClInclude Include="..\UniDX\Singleton.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="source\CameraBehaviour.h" />
+    <ClInclude Include="source\main.h" />
+    <ClInclude Include="source\Player.h" />
+    <ClInclude Include="source\SquareThrustRenderer.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tinygltf\tiny_gltf.cc" />
+    <ClCompile Include="..\UniDx\Camera.cpp" />
+    <ClCompile Include="..\UniDx\Collider.cpp" />
+    <ClCompile Include="..\UniDx\Component.cpp" />
+    <ClCompile Include="..\UniDx\D3DManager.cpp" />
+    <ClCompile Include="..\UniDX\Engine.cpp" />
+    <ClCompile Include="..\UniDx\GameObject.cpp" />
+    <ClCompile Include="..\UniDx\GltfModel.cpp" />
+    <ClCompile Include="..\UniDx\Input.cpp" />
+    <ClCompile Include="..\UniDx\Light.cpp" />
+    <ClCompile Include="..\UniDx\LightManager.cpp" />
+    <ClCompile Include="..\UniDx\Material.cpp" />
+    <ClCompile Include="..\UniDx\Mesh.cpp" />
+    <ClCompile Include="..\UniDx\Physics.cpp" />
+    <ClCompile Include="..\UniDx\PrimitiveRenderer.cpp" />
+    <ClCompile Include="..\UniDx\Renderer.cpp" />
+    <ClCompile Include="..\UniDx\SceneManager.cpp" />
+    <ClCompile Include="..\UniDx\Shader.cpp" />
+    <ClCompile Include="..\UniDx\Texture.cpp" />
+    <ClCompile Include="..\UniDx\Transform.cpp" />
+    <ClCompile Include="..\UniDx\UniDx.cpp" />
+    <ClCompile Include="source\CameraBehaviour.cpp" />
+    <ClCompile Include="source\CreateDefaultScene.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\Player.cpp" />
+    <ClCompile Include="source\SquareThrustRenderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="week01.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Albedo.png" />
+    <Image Include="Resource\brick-1.png" />
+    <Image Include="Resource\brick-2.png" />
+    <Image Include="Resource\floor.png" />
+    <Image Include="Resource\gradation.png" />
+    <Image Include="Resource\space_frigate.png" />
+    <Image Include="Resource\wall-1.png" />
+    <Image Include="Resource\wall-2.png" />
+    <Image Include="Resource\wood-1.png" />
+    <Image Include="Resource\wood-2.png" />
+    <Image Include="small.ico" />
+    <Image Include="week01.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\UniDx\DefaultShade.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="..\UniDx\SpriteShader.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resource\Albedo.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resource\AlbedoShade.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resource\SimpleShade.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DirectXTex\include\DirectXTex.inl" />
+    <None Include="..\DirectXTK\include\SimpleMath.inl" />
+    <None Include="Resource\M PLUS 1.spritefont" />
+    <None Include="Resource\ModularCharacter.glb" />
+    <None Include="Resource\ModularCharacterPBR.glb" />
+    <None Include="Resource\space_frigate_0.glb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\DirectXTex\debug_lib\DirectXTex.lib" />
+    <Library Include="..\DirectXTex\release_lib\DirectXTex.lib" />
+    <Library Include="..\DirectXTK\debug_lib\DirectXTK.lib" />
+    <Library Include="..\DirectXTK\release_lib\DirectXTK.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
